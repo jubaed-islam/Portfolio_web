@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jubaed Islam | Undergraduate Researcher – GIS, Remote Sensing & Urban Planning</title>
+<title>Jubaed Islam – Undergraduate Researcher | Jubaed Islam</title>
 <meta name="description" content="Jubaed Islam, undergraduate researcher in Urban and Regional Planning at CUET, Bangladesh. GIS, remote sensing, disaster risk reduction and climate resilience.">
 <meta property="og:title" content="Jubaed Islam | Academic Portfolio">
 <meta property="og:description" content="GIS, Remote Sensing, Urban Resilience and Climate Adaptation research.">
-<meta property="og:image" content="assets/profile.jpg">
+<meta property="og:image" content="profile.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
@@ -17,15 +17,10 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="nav" id="nav">
-  <a class="brand" href="#home">Jubaed Islam</a>
-  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
-  <nav id="menu" aria-label="Main">
-    <a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a><a href="#interests">Interests</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#certificates">Certificates</a><a href="#awards">Awards</a><a href="#cv">CV</a><a href="#contact">Contact</a>
-  </nav>
-  <button class="theme" id="theme" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
-</header>
-
+<header class="nav"><a class="brand" href="index.html">Jubaed Islam</a>
+<button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+<nav id="menu" aria-label="Main"><a href="index.html" class="active">Home</a><a href="education.html">Education</a><a href="publications.html">Publications</a><a href="projects.html">Research</a><a href="skills.html">Skills &amp; Certificates</a><a href="contact.html">Contact</a></nav>
+<button class="theme" id="theme" aria-label="Toggle dark mode">☾</button></header>
 <main id="main">
 <section id="home" class="hero">
   <div class="hero-text">
@@ -34,90 +29,38 @@
     <h2>Undergraduate Researcher | Urban &amp; Regional Planning | GIS &amp; Remote Sensing</h2>
     <p>I am an undergraduate researcher in Urban and Regional Planning at Chittagong University of Engineering and Technology (CUET), Bangladesh. My research interests focus on geospatial analysis, remote sensing, disaster risk reduction, climate resilience, and sustainable urban development. I am passionate about applying geospatial technologies and data-driven approaches to address complex environmental and urban challenges.</p>
     <div class="btns">
-      <a class="btn primary" href="#projects">View Research</a>
-      <a class="btn" href="#publications">Publications</a>
-      <a class="btn" href="assets/cv.pdf" download>Download CV</a>
+      <a class="btn primary" href="projects.html">View Research</a>
+      <a class="btn" href="publications.html">Publications</a>
+      <a class="btn" href="cv.pdf" download>Download CV</a>
       <a class="btn ghost" href="https://orcid.org/0009-0000-7950-2107" target="_blank" rel="noopener"><i class="fa-brands fa-orcid"></i> ORCID</a>
       <a class="btn ghost" href="https://www.linkedin.com/in/jubaed-islam-587213354?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
     </div>
   </div>
-  <img class="avatar" src="assets/profile.jpg" alt="Portrait of Jubaed Islam" width="360" height="360">
+  <img class="avatar" src="profile.jpg" alt="Portrait of Jubaed Islam" width="360" height="360">
 </section>
-
 <section class="stats" aria-label="Research at a glance">
   <div><b data-count="4">0</b><span>Research projects</span></div>
   <div><b id="pubCount" data-count="6">0</b><span>Publication records</span></div>
   <div><b data-count="12">0</b><span>Research interests</span></div>
   <div><b data-count="3">0</b><span>Core GIS platforms</span></div>
 </section>
-
 <section id="about" class="sec reveal">
   <h2>About Me</h2>
   <p>I am a Level 3, Term 2 student pursuing the Bachelor of Urban and Regional Planning (BURP) at CUET. My work combines satellite remote sensing, spatial statistics and multi-criteria weighting (such as PCA) to assess flood, drought and waterlogging risk, and to model urban growth and land use change across Bangladesh.</p>
 </section>
-
-<section id="education" class="sec reveal">
-  <h2>Education</h2>
-  <ol class="timeline">
-    <li class="now"><h3>Bachelor of Urban and Regional Planning (BURP)</h3><p>Chittagong University of Engineering and Technology (CUET), Bangladesh<br>Department of Urban and Regional Planning</p><span class="tag">Currently pursuing</span></li>
-    <li><h3>Higher Secondary Certificate (HSC)</h3><p>Dr. Mahbubur Rahman Mollah College</p><span class="tag">GPA 5.00</span></li>
-    <li><h3>Secondary School Certificate (SSC)</h3><p>Unique Model School &amp; College</p><span class="tag">GPA 4.94</span></li>
-  </ol>
-</section>
-
 <section id="interests" class="sec reveal">
   <h2>Research Interests</h2>
   <ul class="chips" id="chips"></ul>
 </section>
-
-<section id="publications" class="sec reveal">
-  <h2>Publications</h2>
-  <p class="note">Author lists and DOIs are editable placeholders in <code>script.js</code>; verify each entry before publishing.</p>
-  <div class="filters" id="pubFilters" role="group" aria-label="Filter publications"></div>
-  <div id="pubList" class="list"></div>
-</section>
-
-<section id="projects" class="sec reveal">
-  <h2>Research Projects</h2>
-  <div class="filters" id="projFilters" role="group" aria-label="Filter projects"></div>
-  <div id="projList" class="grid"></div>
-</section>
-
-<section id="skills" class="sec reveal">
-  <h2>Technical Skills</h2>
-  <div class="grid cols3" id="skillGrid"></div>
-</section>
-
-<section id="certificates" class="sec reveal">
-  <h2>Certificates &amp; Professional Training</h2>
-  <p class="note">Add your own certificates to the <code>certs</code> list in <code>script.js</code> and upload files to <code>assets/certificates/</code>.</p>
-  <div id="certGrid" class="grid cols3"></div>
-</section>
-
-<section id="awards" class="sec reveal">
-  <h2>Awards &amp; Achievements</h2>
-  <div id="awardList" class="list"></div>
-</section>
-
-<section id="cv" class="sec reveal">
-  <h2>Curriculum Vitae</h2>
-  <p>Download my latest CV (PDF).</p>
-  <a class="btn primary" href="assets/cv.pdf" download><i class="fa-solid fa-download"></i> Download CV</a>
-</section>
-
-<section id="contact" class="sec reveal">
-  <h2>Contact</h2>
-  <p>Open to research collaboration and academic opportunities.</p>
-  <ul class="social" id="social"></ul>
-</section>
+<section class="sec reveal"><h2>Explore</h2><div class="grid cols3">
+<a class="card" href="education.html"><h3>Education</h3><p>BURP at CUET · HSC &amp; SSC</p></a>
+<a class="card" href="publications.html"><h3>Publications</h3><p>Journal articles, conference papers and manuscripts</p></a>
+<a class="card" href="projects.html"><h3>Research Projects</h3><p>Flood, drought, waterlogging and urban growth studies</p></a>
+<a class="card" href="skills.html"><h3>Skills &amp; Certificates</h3><p>GIS software, analytical tools, training</p></a>
+<a class="card" href="contact.html"><h3>Contact &amp; CV</h3><p>Download my CV and connect</p></a></div></section>
 </main>
-
-<footer><p>© <span id="yr"></span> Jubaed Islam · Department of Urban and Regional Planning, CUET</p><a href="#home">Back to top ↑</a></footer>
-
-<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Certificate preview" hidden>
-  <button id="lbClose" aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
-  <img id="lbImg" alt="">
-</div>
+<footer><p>© <span id="yr"></span> Jubaed Islam · Department of Urban and Regional Planning, CUET</p><a href="#main">Back to top ↑</a></footer>
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Certificate preview" hidden><button id="lbClose" aria-label="Close preview">✕</button><img id="lbImg" alt=""></div>
 <script src="script.js"></script>
 </body>
 </html>

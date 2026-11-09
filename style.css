@@ -48,3 +48,4 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding
 @media(max-width:900px){.burger{display:block}.nav nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--bg);padding:10px 5vw;border-bottom:1px solid var(--line)}.nav nav.open{display:flex}
 .hero{grid-template-columns:1fr;text-align:center;padding-top:40px}.avatar{order:-1;max-width:240px}.btns{justify-content:center}.stats{grid-template-columns:repeat(2,1fr);gap:16px}.grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+a.card{display:block;text-decoration:none;color:inherit;transition:.2s}a.card:hover{transform:translateY(-3px);border-color:var(--teal)}

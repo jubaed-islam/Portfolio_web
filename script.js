@@ -38,7 +38,7 @@ const links = [
 ];
 /* ===== END EDIT AREA ===== */
 
-const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const $=(s,r=document)=>r.querySelector(s)||document.createElement("div"), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 function filters(el,cats,fn){el.innerHTML=cats.map((c,i)=>`<button class="${i?"":"on"}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
@@ -64,7 +64,7 @@ const lb=$("#lb");$("#certGrid").onclick=e=>{const i=e.target.closest("img.thumb
 lb.onclick=e=>{if(e.target!==$("#lbImg"))lb.hidden=true};addEventListener("keydown",e=>{if(e.key==="Escape")lb.hidden=true});
 
 const root=document.documentElement,tb=$("#theme");
-function setTheme(t){root.dataset.theme=t;tb.innerHTML=`<i class="fa-solid fa-${t==="dark"?"sun":"moon"}"></i>`;try{localStorage.setItem("theme",t)}catch(e){}}
+function setTheme(t){root.dataset.theme=t;tb.textContent=t==="dark"?"☀":"☾";try{localStorage.setItem("theme",t)}catch(e){}}
 setTheme((()=>{try{return localStorage.getItem("theme")}catch(e){}})()||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"));
 tb.onclick=()=>setTheme(root.dataset.theme==="dark"?"light":"dark");
 
@@ -77,5 +77,4 @@ const io=new IntersectionObserver(en=>en.forEach(x=>{if(x.isIntersecting){x.targ
 $$(".reveal").forEach(e=>io.observe(e));
 const co=new IntersectionObserver(en=>en.forEach(x=>{if(!x.isIntersecting)return;const el=x.target,n=+el.dataset.count;let k=0;const t=setInterval(()=>{k++;el.textContent=k;if(k>=n)clearInterval(t)},n>0?900/n:0);co.unobserve(el)}),{threshold:.5});
 $$("[data-count]").forEach(e=>co.observe(e));
-const links2=$$("#menu a"),so=new IntersectionObserver(en=>en.forEach(x=>{if(x.isIntersecting)links2.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+x.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
-$$("main section[id]").forEach(s=>so.observe(s));
+/* nav active state is set per page in the HTML */
